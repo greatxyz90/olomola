@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Fund Wallet | JJ VTU</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Fund Wallet – JJ VTU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>JJ <span style="color:#00c853">VTU</span> - Fund Wallet</h1>
-</header>
-<div class="container">
-  <form class="auth-form">
-    <label>Amount</label>
-    <input type="number" placeholder="Enter amount" required>
-    <label>Payment Method</label>
-    <select>
-      <option>Card Payment</option>
-      <option>Bank Transfer</option>
-      <option>USSD</option>
-    </select>
-    <button>💳 Proceed</button>
-    <p style="font-size:13px;">🔒 Payments are secured and verified</p>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="airtime.html">Airtime</a>
+  <a href="data.html">Data</a>
+  <a href="about.html">About</a>
+  <a href="fund-wallet.html">Fund Wallet</a>
+</nav>
+
+<section>
+  <h1>Fund Your Wallet (Demo)</h1>
+  <p>Welcome to JJ VTU demo wallet. This page is for demonstration purposes only. No real funds will be processed.</p>
+
+  <div class="wallet-balance">
+    <strong>Wallet Balance:</strong> ₦0.00 (Demo)
+  </div>
+
+  <form>
+    <label for="amount">Amount to Fund</label><br>
+    <input type="number" id="amount" placeholder="₦1000"><br><br>
+
+    <label for="method">Payment Method</label><br>
+    <select id="method">
+      <option>Bank Transfer (Demo)</option>
+      <option>Paystack (Demo)</option>
+      <option>USSD (Demo)</option>
+    </select><br><br>
+
+    <button type="submit">Fund Wallet</button>
   </form>
-</div>
+
+  <p><em>Note: This is a demo page. No actual transactions will occur.</em></p>
+</section>
+
 <footer>
   <p>© 2026 JJ VTU</p>
 </footer>
+
+<a href="https://wa.me/2348012345678" class="whatsapp" target="_blank">💬 Chat on WhatsApp</a>
+
 </body>
 </html>
