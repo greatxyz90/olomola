@@ -2,50 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Fund Wallet – JJ VTU</title>
+  <title>Fund Wallet | JJ VTU</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="airtime.html">Airtime</a>
-  <a href="data.html">Data</a>
-  <a href="about.html">About</a>
-  <a href="fund-wallet.html">Fund Wallet</a>
-</nav>
+  <!-- Header / Navigation -->
+  <header class="top-nav">
+    <h1>JJ VTU</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="airtime.html">Airtime</a>
+      <a href="data.html">Data</a>
+      <a href="transactions.html">Transactions</a>
+    </nav>
+  </header>
 
-<section>
-  <h1>Fund Your Wallet (Demo)</h1>
-  <p>Welcome to JJ VTU demo wallet. This page is for demonstration purposes only. No real funds will be processed.</p>
+  <!-- Main Content -->
+  <main class="container">
+    <section class="card">
+      <h2>💳 Fund Wallet</h2>
+      <p>Add money to your JJ VTU wallet to enjoy fast and reliable services.</p>
 
-  <div class="wallet-balance">
-    <strong>Wallet Balance:</strong> ₦0.00 (Demo)
-  </div>
+      <form class="form-box">
+        <label for="amount">Enter Amount (₦)</label>
+        <input type="number" id="amount" placeholder="e.g. 5000" disabled>
 
-  <form>
-    <label for="amount">Amount to Fund</label><br>
-    <input type="number" id="amount" placeholder="₦1000"><br><br>
+        <label for="method">Payment Method</label>
+        <select id="method" disabled>
+          <option>Bank Transfer</option>
+          <option>ATM Card</option>
+          <option>USSD</option>
+        </select>
 
-    <label for="method">Payment Method</label><br>
-    <select id="method">
-      <option>Bank Transfer (Demo)</option>
-      <option>Paystack (Demo)</option>
-      <option>USSD (Demo)</option>
-    </select><br><br>
+        <button type="button" class="btn" disabled>
+          Fund Wallet (Coming Soon)
+        </button>
+      </form>
 
-    <button type="submit">Fund Wallet</button>
-  </form>
+      <p class="note">
+        ⚠️ This is a demo interface. Wallet funding will be enabled soon.
+      </p>
+    </section>
+  </main>
 
-  <p><em>Note: This is a demo page. No actual transactions will occur.</em></p>
-</section>
-
-<footer>
-  <p>© 2026 JJ VTU</p>
-</footer>
-
-<a href="https://wa.me/2348012345678" class="whatsapp" target="_blank">💬 Chat on WhatsApp</a>
+  <!-- Footer -->
+  <footer>
+    <p>🔒 All transactions are SSL secured</p>
+    <p>© 2026 JJ VTU</p>
+  </footer>
 
 </body>
 </html>
