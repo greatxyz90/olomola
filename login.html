@@ -2,41 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Login – JJ VTU</title>
+  <title>Login | JJ VTU</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="airtime.html">Airtime</a>
-  <a href="data.html">Data</a>
-  <a href="about.html">About</a>
-  <a href="fund-wallet.html">Fund Wallet</a>
-  <a href="login.html">Login</a>
-</nav>
+  <!-- Header / Nav -->
+  <header class="top-nav">
+    <h1>JJ VTU</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
 
-<section>
-  <h1>Login</h1>
-  <form>
-    <label>Email or Phone</label><br>
-    <input type="text" placeholder="Email or Phone"><br><br>
+  <!-- Login Section -->
+  <main class="container">
+    <section class="card">
+      <h2>🔐 Login</h2>
+      <form>
+        <label>Email</label>
+        <input type="email" placeholder="you@example.com" required>
 
-    <label>Password</label><br>
-    <input type="password" placeholder="Password"><br><br>
+        <label>Password</label>
+        <input type="password" placeholder="********" required>
 
-    <button type="submit">Login</button>
-  </form>
+        <button type="button" onclick="window.location.href='dashboard.html'">
+          Login
+        </button>
+      </form>
 
-  <p><em>Note: This is a demo login. No real authentication yet.</em></p>
-</section>
+      <p style="margin-top:10px;">
+        Don’t have an account? <a href="register.html">Register</a>
+      </p>
 
-<footer>
-  <p>© 2026 JJ VTU</p>
-</footer>
+      <p class="note">
+        ⚠️ This is a demo login. No real authentication.
+      </p>
+    </section>
+  </main>
 
-<a href="https://wa.me/2348012345678" class="whatsapp" target="_blank">💬 Chat on WhatsApp</a>
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 JJ VTU</p>
+  </footer>
 
 </body>
 </html>
