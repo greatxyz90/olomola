@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Register | JJ VTU</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Register | JJ VTU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>JJ <span style="color:#00c853">VTU</span> - Register</h1>
-</header>
+  <!-- Header / Nav -->
+  <header class="top-nav">
+    <h1>JJ VTU</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
 
-<div class="container">
-  <form class="auth-form">
-    <label>Full Name</label>
-    <input type="text" placeholder="Enter full name" required>
-    
-    <label>Email</label>
-    <input type="email" placeholder="Enter email" required>
-    
-    <label>Phone</label>
-    <input type="text" placeholder="Enter phone number" required>
-    
-    <label>Password</label>
-    <input type="password" placeholder="Enter password" required>
-    
-    <button>Register</button>
-    <p style="margin-top:10px;">Already have an account? <a href="login.html">Login</a></p>
-  </form>
-</div>
+  <!-- Register Section -->
+  <main class="container">
+    <section class="card">
+      <h2>📝 Create Account</h2>
+      <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="John Doe" required>
 
-<footer>
-  <p>© 2026 JJ VTU</p>
-</footer>
+        <label>Email</label>
+        <input type="email" placeholder="you@example.com" required>
+
+        <label>Phone</label>
+        <input type="tel" placeholder="08012345678" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="********" required>
+
+        <button type="button" onclick="window.location.href='dashboard.html'">
+          Register
+        </button>
+      </form>
+
+      <p style="margin-top:10px;">
+        Already have an account? <a href="login.html">Login</a>
+      </p>
+
+      <p class="note">
+        ⚠️ This is a demo registration page.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 JJ VTU</p>
+  </footer>
 
 </body>
 </html>
